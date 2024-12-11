@@ -1,0 +1,28 @@
+{
+  "name": "samsam-bot-discord",
+  "version": "0.0.1",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackTheCu/Samsam-Bot-Discord.git"
+  },
+  "keywords": [
+    "samsam-bot-discord"
+  ],
+  "author": "Khang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlackTheCu/Samsam-Bot-Discord/issues"
+  },
+  "homepage": "https://github.com/BlackTheCu/Samsam-Bot-Discord#readme",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7",
+    "moment-timezone": "^0.5.46",
+    "node-schedule": "^2.1.1"
+  }
+}
