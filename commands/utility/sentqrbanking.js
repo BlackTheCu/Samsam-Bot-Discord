@@ -12,11 +12,15 @@ module.exports.data = {
 module.exports.execute = async (interaction) => {
     try {
         // Danh sách các kênh đích
+        // const targetChannels = [
+        //     'p101',
+        //     'p201', 'p202',
+        //     'p301','p302',
+        //     'p401', 'p402',
+        // ];
+
         const targetChannels = [
-            'p101',
-            'p201', 'p202',
-            'p301','p302',
-            'p401', 'p402',
+            'p401',
         ];
 
         // Embed thông báo

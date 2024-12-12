@@ -56,7 +56,7 @@ const sentQrBanking = require('./sentqrbanking'); // Import module sentqrbanking
 
 module.exports.data = {
     name: 'schedulesentmessage', // Tên lệnh bạn sử dụng
-    description: 'Lên lịch gửi tin nhắn tự động vào ngày mùng 5 hàng tháng lúc 20:00 (GMT+7)', // Mô tả lệnh
+    description: 'Lên lịch gửi tin nhắn tự động vào ngày mùng 5 hàng tháng lúc 19:00 (GMT+7)', // Mô tả lệnh
     type: 1, // Loại lệnh (1 là Slash command)
     options: [], // Các tham số nếu có
 };
@@ -64,10 +64,10 @@ module.exports.data = {
 module.exports.execute = async (interaction) => {
     try {
         // Phản hồi khi người dùng gọi lệnh
-        await interaction.reply('Lịch gửi tin nhắn tự động vào ngày mùng 5 hàng tháng lúc 20:00 (GMT+7) đã được thiết lập.');
+        await interaction.reply('Lịch gửi tin nhắn tự động vào ngày mùng 5 hàng tháng lúc 19:00 (GMT+7) đã được thiết lập.');
 
         // Lên lịch chạy vào mùng 5 hàng tháng lúc 20:00 (GMT+7)
-        schedule.scheduleJob('00 20 5 * *', async () => { // 20:00 PM mùng 5 hàng tháng //phút - giờ - ngày - tháng - năm
+        schedule.scheduleJob('00 19 5 * *', async () => { // 19:00 PM mùng 5 hàng tháng //phút - giờ - ngày - tháng - năm
             const currentTime = moment.tz('Asia/Bangkok').format('HH:mm, DD/MM/YYYY');
             console.log(`[Scheduled Task] Bắt đầu thực hiện lệnh sentqrbanking vào lúc: ${currentTime}`);
 
